@@ -1,0 +1,11 @@
+dependencies {
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.springframework.boot:spring-boot-starter-actuator')
+    implementation('com.alibaba.boot:dubbo-spring-boot-starter:0.2.0')
+    implementation('com.alibaba.boot:dubbo-spring-boot-actuator:0.2.0')
+
+    runtimeOnly('org.springframework.boot:spring-boot-devtools')
+
+    implementation project(':dubbo-spring-boot-sample-api')
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+}
